@@ -1,0 +1,32 @@
+{% load static %}
+
+<html>
+<head>
+<title>Secure Sharing of Student's Credentials</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+<link href="{% static 'default.css' %}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body >
+
+  <div id="menu">
+    <ul>
+      <li ><a  style="font-family: 'Changa One', cursive; color : #ea9a33; font-size : 30px;" href="{% url 'index' %}" >DApp</a></li>
+      <li><a href="{% url 'SchoolLogin' %}">School Login</a></li>
+	  <li><a href="{% url 'CompanyLogin' %}">Company Login</a></li>
+      <li><a href="{% url 'StudentLogin' %}">Student Login</a></li>
+  </ul>
+  </div>
+
+		 <br/><br/><br/>
+    <center><font style="color : black; font-size : large;">{{ data|safe }}</font></center>
+	 
+	 <br>
+          <center style="color : black; font-size : 80px; font-family: 'Changa One', cursive; color : #ea9a33;"><br/>Implementing Decentralized application based on Blockchain for secure sharing of student credentials</center></font></p>
+
+  </div>
+
+</body>
+</html>
